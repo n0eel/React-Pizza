@@ -1,0 +1,60 @@
+{
+    "categorias": [
+        {
+            "id": null,
+            "title": "Все"
+        },
+        {
+            "id": "2",
+            "title": "Мясные"
+        },
+        {
+            "id": "3",
+            "title": "Вегетарианская"
+        },
+        {
+            "id": "4",
+            "title": "Гриль"
+        },
+        {
+            "id": "5",
+            "title": "Острые"
+        },
+        {
+            "id": "6",
+            "title": "Закрытые"
+        }
+    ], 
+    "products": [
+        {
+            "id": "1",
+            "categoryId": "2",
+            "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YPN97qC4kjiqaYKPj9xq2-G8wi_HXbznCg&s",
+            "name": "Чизбургер-пицца",
+            "type": ["тонкое", "традиционное"],
+            "size": ["26 см.", "30 см.", "40 см."],
+            "price": 395,
+            "orderCount": 0
+        },
+        {
+            "id": "2",
+            "categoryId": "3",
+            "imgUrl": "https://thumbs.dreamstime.com/b/pizza-delicious-isolated-white-transparent-background-png-file-ready-to-use-pizza-delicious-isolated-white-transparent-293224138.jpg",
+            "name": "Сырная",
+            "type": ["тонкое", "традиционное"],
+            "size": ["26 см.", "30 см.", "40 см."],
+            "price": 450,
+            "orderCount": 0
+        },
+        {
+            "id": "3",
+            "categoryId": "4",
+            "imgUrl": "https://png.pngtree.com/png-clipart/20230928/original/pngtree-pepperoni-pizza-isolated-with-clipping-path-png-image_13007895.png",
+            "name": "Креветки по-азиатски",
+            "type": ["тонкое", "традиционное"],
+            "size": ["26 см.", "30 см.", "40 см."],
+            "price": 290,
+            "orderCount": 0
+        }
+    ]
+}
