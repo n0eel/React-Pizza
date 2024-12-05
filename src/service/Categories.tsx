@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import { useAxios } from "../hook/useAxios"
 import { ArrowUp } from "../assets/images/icons"
 import { Context } from "../context/Context"
-import { useQuery } from "react-query"
+// import { useQuery } from "react-query"
 
 
 interface CategoryType {

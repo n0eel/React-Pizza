@@ -7,3 +7,11 @@ body {
     background-color: #FFDF8C;
     padding: 50px;
 }
+
+.ant-segmented, .ant-segmented-group {
+    width: 100% !important;
+}
+
+.ant-segmented-item {
+    width: 50% !important;  
+}

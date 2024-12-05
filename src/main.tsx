@@ -3,6 +3,8 @@ import App from './App.tsx'
 import { BrowserRouter } from 'react-router-dom'
 import { ProductContext } from './context/Context.tsx'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { Provider } from 'react-redux'
+import { store } from './store/store.ts'
 
 
 const queryClient = new QueryClient({
@@ -12,7 +14,7 @@ const queryClient = new QueryClient({
             refetchOnWindowFocus: false,
             staleTime: 1000 * 60 * 10,
             // @ts-ignore
-            cacheTime: 1000 * 60* 5
+            cacheTime: 1000 * 60 * 5
         }
     }
 })
@@ -20,9 +22,11 @@ const queryClient = new QueryClient({
 createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
         <QueryClientProvider client={queryClient}>
-            <ProductContext>
-                <App />
-            </ProductContext>
+            <Provider store={store}>
+                <ProductContext>    
+                    <App />
+                </ProductContext>
+            </Provider>
         </QueryClientProvider>
     </BrowserRouter>
 )
